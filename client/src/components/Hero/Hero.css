@@ -1,0 +1,16 @@
+body{
+    padding: 10px;
+  }
+  .heroimg{
+    width: 100%
+  }
+  .hero{
+    border: solid;
+    padding: 10px;
+  }
+  .heroinfo{
+    text-align: center;
+  }
+  .herotitle{
+    text-align: center;
+  }
