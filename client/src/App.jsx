@@ -1,7 +1,8 @@
 import './App.css';
  import { useState, useEffect } from "react";
  import Hero from "./components/Hero/Hero";
- import Grid from './components/Grid/Grid';
+ import Grid from "./components/Grid/Grid";
+ import Front from "./components/Front/Front";
 
 function App() {
 
@@ -24,8 +25,13 @@ function App() {
      title: "Lorem ipsum dolor"
    };
 
+   const front = {
+    image: "/images/Freaky.png"
+   };
+
   return (
     <>
+      <Front front={front}/>
       <Hero hero={hero}/>
       <Grid products={products}/> 
     </>

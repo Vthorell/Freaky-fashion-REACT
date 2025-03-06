@@ -6,9 +6,11 @@ function Grid({ products }) {
             {products.map((product) => (
                 <div key={product.id} className="grid-item">
                     <img src={product.image_url} alt={product.name} className="product-image" />
-                    <h4>{product.name}</h4>
-                    <h4>{product.price} kr</h4>
-                    <h4>{product.brand}</h4>
+                    <div className="product-info">
+                        <h4 className="product-name">{product.name}</h4>
+                        <h4 className="product-price">{product.price} kr</h4>
+                    </div>
+                    <h4 className="brand">{product.brand}</h4>
                 </div>
             ))}
         </div>
