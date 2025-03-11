@@ -22,7 +22,8 @@ app.get('/api/products', (req, res) => {
                image_url,
                slug,
                price,
-               brand
+               brand,
+               sku
           FROM products
      `);
      

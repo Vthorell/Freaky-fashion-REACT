@@ -1,4 +1,51 @@
-.front-image{
-    border: solid;
-
+.frontimage {
+    object-fit: cover;
 }
+.search-product {
+    font-size: 1.5rem;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    height: 40px;
+    margin-left: 10px;
+    border: 2px solid;
+}
+.bi-heart-fill {
+    font-size: 2rem;
+    margin-left: 30px;
+}
+.bi-cart {
+    font-size: 2rem;
+    margin-left: 30px;
+}
+.news {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.front {
+    margin-bottom: 20px;
+    align-items: center;
+}
+@media (min-width: 640px) {
+    .front {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+    .news {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media (min-width: 1024px) {
+    .front {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media (max-width: 640px) {
+    .front-image {
+        width: 100%;
+    }   
+}
+
+
