@@ -1,11 +1,15 @@
 import './Grid.css';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Grid({ products }) {
     return (
         <div className="grid-container">
             {products.map((product) => (
                 <div key={product.id} className="grid-item">
-                    <img src={product.image_url} alt={product.name} className="product-image" />
+                    <Link to={`/products/${product.slug}`}>
+                       <img src={product.image_url} alt={product.name} className="product-image" />
+                    </Link>
                     <i className="bi bi-heart heart-icon"></i>
                     <div className="product-info">
                         <h4 className="product-name">{product.name}</h4>

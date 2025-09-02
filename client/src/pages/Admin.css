@@ -42,6 +42,9 @@ tr{
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
+.new-product h2{
+    font-size: 2rem;
+}
 button{
     height: 40px;
     margin-top: 50px;
@@ -79,14 +82,15 @@ form {
     height: 80px;
   }
   
-  button {
+  .new {
     margin-top: 10px;
     padding: 10px 20px;
-    width: 20%;
+    width: 100%;
+    margin-bottom: 10px;
+    height: auto;
     font-size: 1.4rem;
     background-color: #4CAF50; 
     color: white;
-    border: none;
     cursor: pointer;
   }
   

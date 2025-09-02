@@ -1,0 +1,71 @@
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .emoji-container {
+    display: grid;
+    gap: 10px;
+    text-align: center;
+    font-size: 2rem;
+    align-items: center;
+  }
+  
+  @media (max-width: 640px) {
+    .emoji-container {
+      grid-template-columns: 1fr; /* 1 per rad */
+    }
+  }
+  
+  @media (min-width: 640px) and (max-width: 1024px) {
+    .emoji-container {
+      grid-template-columns: 1fr 1fr; /* 2 per rad */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .emoji-container {
+      grid-template-columns: 1fr 1fr 1fr 1fr; /* Alla i en rad */
+    }
+  }
+  
+  .accordion {
+    margin-top: 20px;
+  }
+  
+  .accordion-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  
+  .accordion-header {
+    width: 100%;
+    background: #f5f5f5;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .accordion-header:hover {
+    background: #e0e0e0;
+  }
+  
+  .accordion-content {
+    padding: 10px 15px;
+    background: #fafafa;
+  }
+  
+  .accordion-content p {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  

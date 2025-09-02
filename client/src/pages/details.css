@@ -1,0 +1,136 @@
+.frontimage {
+    object-fit: cover;
+}
+
+.search-product {
+    font-size: 1.5rem;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    height: 40px;
+    margin-left: 10px;
+    border: 2px solid;
+}
+
+.bi-heart-fill {
+    font-size: 2rem;
+    margin-left: 30px;
+}
+
+.bi-cart {
+    font-size: 2rem;
+    margin-left: 30px;
+}
+
+.news {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.front {
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.product-image {
+    height: auto;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 40px;
+}
+
+.product-detail p, h2, h4 {
+    margin-left: 10%;
+    font-size: 1.2rem;
+}
+
+.product-detail h2 {
+    font-size: 1.8rem;
+}
+
+.add-to-cart {
+    margin-left: 10%;
+    margin-top: 0;
+    width: 80%;
+}
+
+.similar-products {
+    margin-top: 50px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.random-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.product-item {
+    flex: 1 1 calc(33.33% - 20px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+}
+
+.product-item h4 {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.product-item p {
+    font-size: 1rem;
+    color: #333;
+}
+
+@media (min-width: 640px) {
+    .front {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+
+    .news {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .product-detail {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .add-to-cart {
+        margin-left: 10%;
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .front {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .front-image {
+        width: 100%;
+    }
+
+    .similar-products {
+        display: none;
+    }
+
+    .random-products {
+        display: none;
+    }
+}
+
+  

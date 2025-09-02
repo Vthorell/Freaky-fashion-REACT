@@ -83,6 +83,32 @@ app.post('/api/products', (req, res) => {
   }
 });
 
+// Hämtar en produkt baserat på slug
+app.get('/api/products/:slug', (req, res) => {
+    const { slug } = req.params;
+  
+    const select = db.prepare(`
+      SELECT id,
+             name,
+             description,
+             image_url,
+             slug,
+             price,
+             brand,
+             sku
+        FROM products
+       WHERE slug = ?
+    `);
+  
+    const product = select.get(slug);  // Hämta en enskild produkt baserat på slug
+  
+    if (product) {
+      res.json(product);
+    } else {
+      res.status(404).json({ message: 'Produkt inte hittad' });
+    }
+  });
+
 app.listen(port, () => {
   console.log(`Servern lyssnar på port ${port}`);
 });

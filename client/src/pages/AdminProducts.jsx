@@ -17,7 +17,7 @@ function AdminProducts({ products }) {
         <div className="producttable">
           <div className="new-product">
             <h2>Produkter</h2>
-            <button onClick={() => navigate("/admin/products/new")}>Ny produkt</button>
+            <button onClick={() => navigate("/admin/products/new")} className="new">Ny produkt</button>
           </div>
           <table>
             <thead>
